@@ -1,0 +1,139 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  /* cursor: pointer; */
+  font-family: inherit;
+}
+h1,
+h2 {
+  margin: 0;
+}
+.container {
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto;
+  outline: 1px solid teal;
+}
+.title {
+  margin-bottom: 20px;
+}
+.form {
+  margin-bottom: 20px;
+}
+
+.form__label,
+.list-title {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.form__input {
+  min-width: 250px;
+  padding: 2px 10px;
+  font-size: 16px;
+  line-height: 1.36;
+  color: #3f3f3f;
+  border-radius: 0;
+  border: 1px solid #999999;
+}
+.form__input::placeholder {
+  font-size: 14px;
+  line-height: 1.16;
+}
+.form__input:focus {
+  outline: none;
+  border: 1px solid #353434;
+}
+
+.list-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.list {
+  width: 250px;
+  min-height: 150px;
+  margin: 0;
+  margin-right: 54px;
+  padding: 2px 10px;
+  line-height: 1.36;
+  color: #3f3f3f;
+  list-style: none;
+  border: 1px solid #999999;
+}
+.buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 400px;
+    padding: 30px;
+  }
+  .form__input {
+    min-width: 250px;
+    min-height: 20px;
+    margin-right: 20px;
+  }
+  .list-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .list {
+    min-width: 250px;
+
+    margin: 0;
+    margin-right: 24px;
+  }
+  .buttons-wrapper {
+    flex-direction: column;
+  }
+
+  .btn:not(:last-child) {
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 788px;
+  }
+  .form__input {
+    min-width: 350px;
+    min-height: 20px;
+    margin-right: 30px;
+  }
+  .list {
+    min-width: 350px;
+    min-height: 300px;
+    margin: 0;
+    margin-right: 34px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1120px;
+  }
+  .form__input {
+    min-width: 400px;
+    min-height: 20px;
+    margin-right: 50px;
+  }
+  .list {
+    min-width: 400px;
+    min-height: 300px;
+    margin: 0;
+    margin-right: 54px;
+  }
+}
