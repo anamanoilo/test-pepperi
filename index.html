@@ -22,31 +22,39 @@
     <div class="container">
       <h1 class="title">Test</h1>
       <form class="form">
-        <label for="pair" class="form__label">Name/Value Pair</label>
-        <input
-          class="form__input"
-          type="text"
-          placeholder="Name=Value"
-          name="input"
-          id="pair"
-          autocomplete="off"
-        />
-
-        <button type="submit">Add</button>
+        <div class="form__wrapper">
+          <div class="form__input-wrapper">
+            <label for="pair" class="form__label">Name/Value Pair</label>
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Name=Value"
+              name="input"
+              id="pair"
+              autocomplete="off"
+            />
+          </div>
+          <button type="submit" class="add-btn">Add</button>
+        </div>
+        <p class="error"></p>
       </form>
       <h2 class="list-title">Name/Value Pair List</h2>
       <div class="list-wrapper">
         <ul class="list"></ul>
 
         <div class="buttons-wrapper">
-          <button type="button" class="btn sort-by-name-btn" disabled>
+          <button type="button" class="btn" data-action="name" disabled>
             Sort by name
           </button>
-          <button type="button" class="btn sort-by-value-btn" disabled>
+          <button type="button" class="btn" data-action="value" disabled>
             Sort by value
           </button>
-          <button type="button" class="btn delete-btn" disabled>Delete</button>
-          <button type="button" class="btn xml-btn" disabled>Show XML</button>
+          <button type="button" class="btn" data-action="delete" disabled>
+            Delete
+          </button>
+          <button type="button" class="btn" data-action="xml" disabled>
+            Show XML
+          </button>
         </div>
       </div>
     </div>
